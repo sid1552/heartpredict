@@ -1,6 +1,6 @@
 Sure! Here's a `README.md` file with instructions to set up and run your project:
 
-markdown
+```markdown
 # Heart Disease Prediction Application
 
 This application predicts heart disease using a Flask backend and a frontend.
