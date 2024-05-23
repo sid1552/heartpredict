@@ -10,10 +10,16 @@ This application predicts heart disease using a Flask backend and a frontend.
 Before you begin, ensure you have met the following requirements:
 - Python 3.x installed on your machine
 - Node.js and npm installed on your machine
+- Git is installed on your machine
 
 ## Setting Up the Backend
 
 1. **Clone the repository:**
+
+move to final branch with code -->
+```bash
+git checkout final
+```
 
 
 2. **Install the Python dependencies:**
