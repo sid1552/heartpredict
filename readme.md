@@ -20,7 +20,7 @@ move to final branch with code -->
 ```
 git checkout final
 
-```
+
 
 2. **Install the Python dependencies:**
 
