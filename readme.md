@@ -1,6 +1,3 @@
-Sure! Here's a `README.md` file with instructions to set up and run your project:
-
-```markdown
 # Heart Disease Prediction Application
 
 This application predicts heart disease using a Flask backend and a frontend.
@@ -10,53 +7,53 @@ This application predicts heart disease using a Flask backend and a frontend.
 Before you begin, ensure you have met the following requirements:
 - Python 3.x installed on your machine
 - Node.js and npm installed on your machine
-- Git is installed on your machine
+- Git installed on your machine
 
 ## Setting Up the Backend
 
-1. **Clone the repository:**
+1. **Clone the repository and move to the final branch:**
 
-move to final branch with code -->
-
-git checkout final
-
-
+    ```bash
+    git clone https://github.com/sid1552/heartpredict
+    cd heartpredict
+    git checkout final
+    ```
 
 2. **Install the Python dependencies:**
 
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 3. **Run the Flask application:**
 
-```bash
-python app.py
-```
+    ```bash
+    python app.py
+    ```
 
-The backend should now be running on `http://127.0.0.1:5000`.
+    The backend should now be running on `http://127.0.0.1:5000`.
 
 ## Setting Up the Frontend
 
 1. **Open a new terminal and navigate to the frontend folder:**
 
-```bash
-cd frontend
-```
+    ```bash
+    cd frontend
+    ```
 
 2. **Install the npm dependencies:**
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
 3. **Start the frontend application:**
 
-```bash
-npm start
-```
+    ```bash
+    npm start
+    ```
 
-The frontend should now be running, typically at `http://localhost:3000`.
+    The frontend should now be running, typically at `http://localhost:3000`.
 
 ## Usage
 
