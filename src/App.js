@@ -102,149 +102,177 @@ function App() {
     <div className="App min-h-screen flex items-center justify-center" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <header className="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg w-3/4 md:w-1/2 lg:w-1/3">
         <h1 className="text-2xl font-bold mb-6 text-center text-gray-800">Heart Disease Predictor</h1>
-        <form onSubmit={handleSubmit} className='flex flex-col space-y-4'>
-          <label>
-            Age:
-            <input
-              type="text"
-              name="age"
-              value={inputData.age}
-              onChange={handleChange}
-              className="ml-2"
-            />
-          </label>
-          <div className="flex items-center">
-            <label className="mr-2">Sex:</label>
-            <input
-              type="radio"
-              name="sex"
-              value="1"
-              checked={inputData.sex === '1'}
-              onChange={handleSexChange}
-            />
-            <label className="mr-4">Male</label>
-            <input
-              type="radio"
-              name="sex"
-              value="0"
-              checked={inputData.sex === '0'}
-              onChange={handleSexChange}
-            />
-            <label>Female</label>
+        <form onSubmit={handleSubmit} className='flex flex-wrap -mx-2'>
+          <div className="w-full md:w-1/2 px-2 mb-4">
+            <label className="block">
+              Age:
+              <input
+                type="text"
+                name="age"
+                value={inputData.age}
+                onChange={handleChange}
+                className="block w-full mt-1"
+              />
+            </label>
           </div>
-          <label>
-            CP:
-            <input
-              type="text"
-              name="cp"
-              value={inputData.cp}
-              onChange={handleChange}
-              className="ml-2"
-            />
-          </label>
-          <label>
-            Trestbps:
-            <input
-              type="text"
-              name="trestbps"
-              value={inputData.trestbps}
-              onChange={handleChange}
-              className="ml-2"
-            />
-          </label>
-          <label>
-            Chol:
-            <input
-              type="text"
-              name="chol"
-              value={inputData.chol}
-              onChange={handleChange}
-              className="ml-2"
-            />
-          </label>
-          <label>
-            FBS:
-            <input
-              type="text"
-              name="fbs"
-              value={inputData.fbs}
-              onChange={handleChange}
-              className="ml-2"
-            />
-          </label>
-          <label>
-            Restecg:
-            <input
-              type="text"
-              name="restecg"
-              value={inputData.restecg}
-              onChange={handleChange}
-              className="ml-2"
-            />
-          </label>
-          <label>
-            Thalach:
-            <input
-              type="text"
-              name="thalach"
-              value={inputData.thalach}
-              onChange={handleChange}
-              className="ml-2"
-            />
-          </label>
-          <label>
-            Exang:
-            <input
-              type="text"
-              name="exang"
-              value={inputData.exang}
-              onChange={handleChange}
-              className="ml-2"
-            />
-          </label>
-          <label>
-            Oldpeak:
-            <input
-              type="text"
-              name="oldpeak"
-              value={inputData.oldpeak}
-              onChange={handleChange}
-              className="ml-2"
-            />
-          </label>
-          <label>
-            Slope:
-            <input
-              type="text"
-              name="slope"
-              value={inputData.slope}
-              onChange={handleChange}
-              className="ml-2"
-            />
-          </label>
-          <label>
-            CA:
-            <input
-              type="text"
-              name="ca"
-              value={inputData.ca}
-              onChange={handleChange}
-              className="ml-2"
-            />
-          </label>
-          <label>
-            Thal:
-            <input
-              type="text"
-              name="thal"
-              value={inputData.thal}
-              onChange={handleChange}
-              className="ml-2"
-            />
-          </label>
-          <button className='bg-black text-white mt-4' type="submit">Predict</button>
+          <div className="w-full md:w-1/2 px-2 mb-4">
+            <label className="block">Sex:</label>
+            <div className="flex items-center mt-1 justify-center">
+              <input
+                type="radio"
+                name="sex"
+                value="1"
+                checked={inputData.sex === '1'}
+                onChange={handleSexChange}
+              />
+              <label className="ml-2 mr-4">Male</label>
+              <input
+                type="radio"
+                name="sex"
+                value="0"
+                checked={inputData.sex === '0'}
+                onChange={handleSexChange}
+              />
+              <label className="ml-2">Female</label>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2 px-2 mb-4">
+            <label className="block">
+              CP:
+              <input
+                type="text"
+                name="cp"
+                value={inputData.cp}
+                onChange={handleChange}
+                className="block w-full mt-1"
+              />
+            </label>
+          </div>
+          <div className="w-full md:w-1/2 px-2 mb-4">
+            <label className="block">
+              Trestbps:
+              <input
+                type="text"
+                name="trestbps"
+                value={inputData.trestbps}
+                onChange={handleChange}
+                className="block w-full mt-1"
+              />
+            </label>
+          </div>
+          <div className="w-full md:w-1/2 px-2 mb-4">
+            <label className="block">
+              Chol:
+              <input
+                type="text"
+                name="chol"
+                value={inputData.chol}
+                onChange={handleChange}
+                className="block w-full mt-1"
+              />
+            </label>
+          </div>
+          <div className="w-full md:w-1/2 px-2 mb-4">
+            <label className="block">
+              FBS:
+              <input
+                type="text"
+                name="fbs"
+                value={inputData.fbs}
+                onChange={handleChange}
+                className="block w-full mt-1"
+              />
+            </label>
+          </div>
+          <div className="w-full md:w-1/2 px-2 mb-4">
+            <label className="block">
+              Restecg:
+              <input
+                type="text"
+                name="restecg"
+                value={inputData.restecg}
+                onChange={handleChange}
+                className="block w-full mt-1"
+              />
+            </label>
+          </div>
+          <div className="w-full md:w-1/2 px-2 mb-4">
+            <label className="block">
+              Thalach:
+              <input
+                type="text"
+                name="thalach"
+                value={inputData.thalach}
+                onChange={handleChange}
+                className="block w-full mt-1"
+              />
+            </label>
+          </div>
+          <div className="w-full md:w-1/2 px-2 mb-4">
+            <label className="block">
+              Exang:
+              <input
+                type="text"
+                name="exang"
+                value={inputData.exang}
+                onChange={handleChange}
+                className="block w-full mt-1"
+              />
+            </label>
+          </div>
+          <div className="w-full md:w-1/2 px-2 mb-4">
+            <label className="block">
+              Oldpeak:
+              <input
+                type="text"
+                name="oldpeak"
+                value={inputData.oldpeak}
+                onChange={handleChange}
+                className="block w-full mt-1"
+              />
+            </label>
+          </div>
+          <div className="w-full md:w-1/2 px-2 mb-4">
+            <label className="block">
+              Slope:
+              <input
+                type="text"
+                name="slope"
+                value={inputData.slope}
+                onChange={handleChange}
+                className="block w-full mt-1"
+              />
+            </label>
+          </div>
+          <div className="w-full md:w-1/2 px-2 mb-4">
+            <label className="block">
+              CA:
+              <input
+                type="text"
+                name="ca"
+                value={inputData.ca}
+                onChange={handleChange}
+                className="block w-full mt-1"
+              />
+            </label>
+          </div>
+          <div className="w-full md:w-1/2 px-2 mb-4">
+            <label className="block">
+              Thal:
+              <input
+                type="text"
+                name="thal"
+                value={inputData.thal}
+                onChange={handleChange}
+                className="block w-full mt-1"
+              />
+            </label>
+          </div>
+          <div className="w-full px-2 mb-4">
+            <button className='bg-black text-white w-full py-2' type="submit">Predict</button>
+          </div>
         </form>
-        {prediction && <p>Prediction: {prediction}</p>}
+        {prediction && <p className="mt-4 text-center">Prediction: {prediction}</p>}
         {chartData && <Line data={chartData} />}
       </header>
     </div>
