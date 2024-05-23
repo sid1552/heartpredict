@@ -17,9 +17,9 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the repository:**
 
 move to final branch with code -->
-```bash
+
 git checkout final
-```
+
 
 
 2. **Install the Python dependencies:**
